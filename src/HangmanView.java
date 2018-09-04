@@ -10,6 +10,7 @@ import java.awt.BasicStroke;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -95,7 +96,7 @@ public class HangmanView extends JFrame implements ActionListener {
 	private JPanel gameOverDialogBottom = new JPanel(); /* Holds the "Play Again/Quit" buttons */
 	
 	/* To handle when a "keyboard" button is pressed */
-	ActionListener keyboardButtonAction = new ActionListener(){
+	protected ActionListener keyboardButtonAction = new ActionListener(){
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			JButton buttonPress = (JButton)e.getSource();
@@ -468,7 +469,7 @@ public class HangmanView extends JFrame implements ActionListener {
 	 * Returns: N/A
 	 * 
 	 ***************************************************************************/
-	private void changeBGColor(Color bgc){
+	protected void changeBGColor(Color bgc){
 		frame.setBackground(bgc);
 		titlePanel.setBackground(bgc);
 		splashScreen.setBackground(bgc);
@@ -653,7 +654,7 @@ public class HangmanView extends JFrame implements ActionListener {
 	 * 						to guess
 	 * Returns: N/A
 	 ***************************************************************************/
-	private void setUpBlanks(String word) {
+	protected void setUpBlanks(String word) {
 		/* Set up blanks in the Blanks panel */
 		
 		blanksOrChars.clear();
@@ -679,7 +680,7 @@ public class HangmanView extends JFrame implements ActionListener {
 	 * 		@param kd - the panel to format the on-screen keyboard on
 	 * Returns: N/A
 	 ***************************************************************************/
-	private void setUpKeyboardDisplay(JPanel kd){
+	protected void setUpKeyboardDisplay(JPanel kd){
 		northTemp.setPreferredSize(new Dimension(10, 40));
 		//northTemp.setBorder(BorderFactory.createEtchedBorder());
 		northTemp.setBackground(bgColor);
@@ -757,7 +758,7 @@ public class HangmanView extends JFrame implements ActionListener {
 	 * Argument(s): N/A
 	 * Returns: N/A
 	 ***************************************************************************/
-	private void enableAllKeyboardButtons() {
+	protected void enableAllKeyboardButtons() {
 		for(int i = 0; i < rowOneButtons.length; i++) {
 			rowOneButtons[i].setEnabled(true);
 		}
@@ -777,7 +778,7 @@ public class HangmanView extends JFrame implements ActionListener {
 	 * Argument(s): N/A
 	 * Returns: N/A
 	 ***************************************************************************/
-	private void disableAllKeyboardButtons() {
+	protected void disableAllKeyboardButtons() {
 		for(int i = 0; i < rowOneButtons.length; i++) {
 			rowOneButtons[i].setEnabled(false);
 		}
@@ -1182,6 +1183,42 @@ public class HangmanView extends JFrame implements ActionListener {
 		
 		/* Setting the frame to be visible */
 		frame.setVisible(true);
+	}
+	
+	public JButton[] getRowOneButtons() {
+		return rowOneButtons;
+	}
+	
+	public JButton[] getRowTwoButtons() {
+		return rowTwoButtons;
+	}
+	
+	public JButton[] getRowThreeButtons() {
+		return rowThreeButtons;
+	}
+	
+	public JFrame getFrame() {
+		return frame;
+	}
+	
+	public JLabel getTitleLabel() {
+		JLabel label = null;
+		for (Component c : titlePanel.getComponents()) {
+	        if (c instanceof JLabel) {
+	            label = (JLabel) c;
+	        }
+	    }
+		
+		return label;
+	}
+	
+	public int getNumOfBlanks() {
+		int n = 0;
+		for (Component c : blanksPanel.getComponents()) {
+	        n++;
+	    }
+		
+		return n;
 	}
 }
 
