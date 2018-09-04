@@ -16,3 +16,5 @@ Note on location of font file - Put the .ttf file in the src folder so that the 
 Note on losing the game - When a player loses the game, the system will display the word that they were unable to guess.
 
 Note on "Play Again" button - Will take take the player back to the difficulty screen to set the difficulty again.
+
+Note on coding issues - Using getGraphics() and drawing straight into a hangmanPanel did not keep those changes when window was resized. This also had a part in the issue where, first, parts of the hangman was drawn and then when the user guesses their first correct letter, the previous hangman parts erased.
