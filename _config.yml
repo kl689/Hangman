@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: [Hangman in Java Swing]
-description: This project was created for a GUI class. Some of the features include: a difficulty setting, background color setting, a "Play Again" functionality for the end of a game, and a "New Game" functionality for getting a new word to guess during a current game.
+description: [This project was created for a GUI class. Some of the features include: 
+- A difficulty setting 
+- Background color setting
+- "Play Again" functionality for the end of a game
+- "New Game" functionality for getting a new word to guess during a current game.]
