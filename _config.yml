@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+title: [Hangman in Java Swing]
+description: This project was created for a GUI class. Some of the features include:
+- A difficulty setting
