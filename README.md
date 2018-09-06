@@ -11,7 +11,7 @@
 ## To Run The Program:
 Double-click on the executable jar file named "Hangman" in the src folder.
 
-Some Notes:
+## Some Notes:
 > ### Bugs 
 > - Sometimes the last blank/dash doesn't disappear all the way when a letter appears in its place.
 >
