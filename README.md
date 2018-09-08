@@ -14,6 +14,7 @@ Double-click on the executable jar file named "Hangman" in the src folder.
 ## Some Notes:
 > ### Bugs 
 > - Sometimes the last blank/dash doesn't disappear all the way when a letter appears in its place.
+> - The hangman drawing will resize as the main window frame is resized.
 >
 > ### Note on mvc pattern 
 > - Tried to separate the program into model-view-controller components.
