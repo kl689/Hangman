@@ -1168,8 +1168,8 @@ public class HangmanView extends JFrame implements ActionListener {
 		addCardsToMainPanel(); 
 		setUpMenuBar(menuBar);
 		
-		frame.setMinimumSize(new Dimension(1000, 700)); /* Sets the default size of the main window */
-		frame.setPreferredSize(new Dimension(1000, 700));
+		frame.setMinimumSize(new Dimension(900, 600)); /* Sets the default size of the main window */
+		frame.setPreferredSize(new Dimension(900, 600));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setJMenuBar(menuBar);
 		
