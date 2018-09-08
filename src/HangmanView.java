@@ -1053,7 +1053,7 @@ public class HangmanView extends JFrame implements ActionListener {
 		menuBar.add(help);
 		
 		/* To set up the secondary frame that will display when the "Rules" menu item is clicked */
-		instructionsFrame.setSize(900, 600); /* Sets the default size of the window */
+		instructionsFrame.setSize(700, 600); /* Sets the default size of the window */
 		instructionsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		Container pane = instructionsFrame.getContentPane();
 		
@@ -1168,8 +1168,8 @@ public class HangmanView extends JFrame implements ActionListener {
 		addCardsToMainPanel(); 
 		setUpMenuBar(menuBar);
 		
-		frame.setMinimumSize(new Dimension(900, 600)); /* Sets the default size of the main window */
-		frame.setPreferredSize(new Dimension(900, 600));
+		frame.setMinimumSize(new Dimension(900, 630)); /* Sets the default size of the main window */
+		frame.setPreferredSize(new Dimension(900, 630));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setJMenuBar(menuBar);
 		
