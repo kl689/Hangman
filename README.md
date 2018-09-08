@@ -34,5 +34,5 @@ Double-click on the executable jar file named "Hangman" in the src folder.
 > ### Note on coding issues 
 > - Using getGraphics() and drawing straight into a hangmanPanel did not keep those changes when window was resized. This also had a part in the issue where, first, parts of the hangman was drawn and then when the user guesses their first correct letter, the previous hangman parts erased.
 
-## Improvements:
+## Possible Future Improvements:
 - For the "New Game" menu item, could ask the user to confirm their choice to make sure the user didn't accidentally click on it.
