@@ -945,13 +945,13 @@ public class HangmanView extends JFrame implements ActionListener {
 		JButton pa = new JButton("Play Again");
 		JButton q = new JButton("Quit");
 		
-		pa.setPreferredSize(new Dimension(100, 30));
-		pa.setMinimumSize(new Dimension(100, 30));
+		pa.setPreferredSize(new Dimension(150, 30));
+		pa.setMinimumSize(new Dimension(150, 30));
 		pa.setHorizontalAlignment(JLabel.CENTER);
 		pa.setFocusable(false);
 		
-		q.setPreferredSize(new Dimension(100, 30));
-		q.setMinimumSize(new Dimension(100, 30));
+		q.setPreferredSize(new Dimension(150, 30));
+		q.setMinimumSize(new Dimension(150, 30));
 		q.setHorizontalAlignment(JButton.CENTER);
 		q.setFocusable(false);
 		
