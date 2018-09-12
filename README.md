@@ -36,3 +36,5 @@ Double-click on the executable jar file named "Hangman" in the src folder.
 
 ## Possible Future Improvements:
 - For the "New Game" menu item, could ask the user to confirm their choice to make sure the user didn't accidentally click on it.
+- Difficulty level could be a setting instead of being selected before each game.
+- How to Play and Rules should have the same name and take you to the same pop-up screen.
