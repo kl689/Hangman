@@ -14,7 +14,6 @@ Double-click on the executable jar file named "Hangman" in the src folder.
 ## Some Notes:
 > ### Bugs 
 > - Sometimes the last blank/dash doesn't disappear all the way when a letter appears in its place.
-> - The hangman drawing will resize as the main window frame is resized.
 >
 > ### Note on mvc pattern 
 > - Tried to separate the program into model-view-controller components.
@@ -35,6 +34,7 @@ Double-click on the executable jar file named "Hangman" in the src folder.
 > - Using getGraphics() and drawing straight into a hangmanPanel did not keep those changes when window was resized. This also had a part in the issue where, first, parts of the hangman was drawn and then when the user guesses their first correct letter, the previous hangman parts erased.
 
 ## Possible Future Improvements:
-- For the "New Game" menu item, could ask the user to confirm their choice to make sure the user didn't accidentally click on it.
+- For the "New Game" menu item, could ask the user to confirm their choice to make sure the user didn't accidentally click on it. Same with the "Quit" menu utem.
 - Difficulty level could be a setting instead of being selected before each game.
 - How to Play and Rules should have the same name and take you to the same pop-up screen.
+- The hangman drawing could be changed to not resize as the main window frame is resized.
